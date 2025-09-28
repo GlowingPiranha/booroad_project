@@ -1,6 +1,15 @@
 import express from "express";
 const router = express.Router();
 
+
+router.get("/test", (req, res) => {
+  res.json({
+    status: "success",
+    message: "API contatti attiva!"
+  });
+});
+
+
 router.post("/", (req, res) => {
   const { name, email, message } = req.body;
 

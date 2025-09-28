@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use("/api/participants", participantsRouter);
 app.use("/api/trips", tripRouter);
-app.use("api/contact", contactRouter);
+app.use("/api/contact", contactRouter);
 
 app.listen(PORT, () => {
   console.log(`Server attivo su http://localhost:${PORT}`);
